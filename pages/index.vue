@@ -1,72 +1,38 @@
 <template>
-  <div class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        destination-malaysia
-      </h1>
-      <h2 class="subtitle">
-        My sublime Nuxt.js project
-      </h2>
-      <div class="links">
-        <a class="button--green" href="https://nuxtjs.org/" target="_blank"
-        >Documentation</a
-        >
-        <a
-          class="button--grey"
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-        >GitHub</a
-        >
-      </div>
-    </div>
+  <div>
+    <Header></Header>
+    <Banner></Banner>
+    <Search></Search>
+    <Destinations></Destinations>
+    <Hotels></Hotels>
+    <Community></Community>
+    <LearnMore></LearnMore>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-    import Logo from '~/components/Logo.vue'
+import Header from '~/components/sections/Header'
+import Banner from '~/components/sections/Banner'
+import Search from '~/components/sections/Search'
+import Destinations from '~/components/sections/Destinations'
+import Hotels from '~/components/sections/Hotels'
+import Community from '~/components/sections/Community'
+import LearnMore from '~/components/sections/LearnMore'
+import Footer from '~/components/sections/Footer'
 
-    export default {
-        components: {
-            Logo
-        }
-    }
+export default {
+  components: {
+    Header,
+    Banner,
+    Search,
+    Destinations,
+    Hotels,
+    Community,
+    LearnMore,
+    Footer
+  }
+}
 </script>
 
-<style>
-  /* Sample `apply` at-rules with Tailwind CSS
-  .container {
-    @apply min-h-screen flex justify-center items-center text-center mx-auto;
-  }
-  */
-  .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .title {
-    font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    display: block;
-    font-weight: 300;
-    font-size: 100px;
-    color: #35495e;
-    letter-spacing: 1px;
-  }
-
-  .subtitle {
-    font-weight: 300;
-    font-size: 42px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
-  }
-
-  .links {
-    padding-top: 15px;
-  }
-</style>
+<style></style>
