@@ -1,9 +1,7 @@
 # destination-malaysia
 
-- Ensure `docker` is [installed](https://docs.docker.com/v17.09/engine/installation/#supported-platforms).
-- Build the docker image: `docker build -t destination-malaysia .`
-- Create and Start a docker container: 
-    - `docker run -p 3000:3000 -v $PWD:/app -v node_modules:/app/node_modules -v .nuxt:/app/.nuxt --name destination-malaysia -dti destination-malaysia`
+- `npm install`
+- `npm run dev`
  > Start Coding!
 
 # Resources:
@@ -23,3 +21,7 @@
 ## Deployment
 - https://pages.github.com/
 - https://id.nuxtjs.org/faq/github-pages/ 
+
+Steps:
+1. `npm run generate:ghp`
+2. `npm run deploy`
