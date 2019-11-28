@@ -26,7 +26,7 @@
       class="w-full block flex-grow md:flex md:items-center md:justify-end"
     >
       <div
-        v-for="links in ['Docs', 'Examples', 'Blog']"
+        v-for="links in ['Home', 'Hotels', 'Packages', 'Events', 'Blog']"
         class="text-sm md:text-base md:mr-4"
       >
         <a
