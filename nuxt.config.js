@@ -1,10 +1,10 @@
 const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
-      router: {
-        base: '/destination-malaysia/'
+        router: {
+          base: '/destination-malaysia/'
+        }
       }
-    }
     : {}
 
 export default {
@@ -18,8 +18,8 @@ export default {
   head: {
     title: process.env.npm_package_name || '',
     meta: [
-      {charset: 'utf-8'},
-      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
@@ -58,6 +58,8 @@ export default {
    ** Build configuration
    */
   build: {
+    devtools:
+      process.env.DEPLOY_ENV === 'GH_PAGES' ? 'source-map' : 'eval-source-map',
     extractCSS: true,
     postcss: {
       plugins: {
