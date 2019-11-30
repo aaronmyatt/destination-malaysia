@@ -1,10 +1,10 @@
 <template>
   <img
     :class="classes"
-    :src="src"
     :loading="lazyEnabled"
-    class="lazyload"
+    :src="src"
     alt="Destination Malaysia"
+    class="lazyload"
   />
 </template>
 

@@ -26,8 +26,8 @@
       class="w-full block flex-grow md:flex md:items-center md:justify-end"
     >
       <div
-        v-for="links in ['Home', 'Hotels', 'Packages', 'Events', 'Blog']"
         class="text-sm md:text-base md:mr-4"
+        v-for="links in ['Home', 'Hotels', 'Packages', 'Events', 'Blog']"
       >
         <a
           class="block mt-4 lg:inline-block md:mt-0 mr-4"
